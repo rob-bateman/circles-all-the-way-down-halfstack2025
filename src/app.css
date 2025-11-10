@@ -6,6 +6,30 @@
   width: 100%;
   margin: 0 auto;
   text-align: center;
-  height: 100vh;
+  height: 100%;
 }
 
+h2 {
+  font-size: 100px !important;
+  font-family: Baloo Bhaijaan !important;
+  font-weight: normal !important;
+  text-transform: none !important;
+  text-shadow: rgb(255, 255, 255) 1px 0 10px !important;
+}
+
+p {
+  text-shadow: rgb(255, 255, 255) 1px 0 10px !important;
+}
+
+.h2 {
+  font-size: 100px !important;
+  font-family: Baloo Bhaijaan !important;
+  font-weight: normal !important;
+  text-transform: none !important;
+  text-shadow: rgb(255, 255, 255) 1px 0 10px !important;
+}
+
+/* .reveal video {
+  max-width: 100% !important;
+  max-height: 100% !important;
+} */

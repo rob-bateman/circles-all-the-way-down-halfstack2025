@@ -11,7 +11,12 @@
     onMount(async () => {
         await tick();
         const deck = new Reveal(reveal);
-        deck.initialize();
+        deck.initialize({
+            transition: 'fade',
+            controls: true,
+            progress: true,
+            center: true,
+        });
       });
 
 </script>
