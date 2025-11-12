@@ -16,6 +16,23 @@
 		</div>
 		<Notes>This is an example of slide notes</Notes>
 </section> -->
+<section data-background-color="#000">
+    <p>http://awayfl.org</p>
+    <div class="r-vstack">
+        <img src="assets/awayfl-org.png" width="800" /> 
+    </div>
+</section>
+<section data-background-color="#000">
+    <p>http://p5js.org</p>
+    <div class="r-vstack">
+        <img src="assets/p5js.png" width="300" /> 
+    </div>
+    <p>(Proce55ing)</p>
+</section>
+<section data-background-video="assets/physics-title2.mp4" data-background-video-loop="true" data-background-video-muted>
+  <h2>Circles</h2>
+  <p>(Thanks twigl.app!)</p>
+</section>
 <section data-background="assets/circle-example1.png">
 </section>
 <section data-background="assets/circle-example2.png">
