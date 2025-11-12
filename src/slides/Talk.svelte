@@ -40,22 +40,38 @@
 </section>
 <section data-background-color="#000">
     <div class="r-vstack">
-        <img src="assets/fourier_restoration.jpg" width="500" />
+        <img src="assets/fourier_restoration.jpg" width="500" /> 
     </div>
 </section>
-<section data-background-iframe="assets/Drawing_with_Fourier_Transform_and_Epicycles/index.html" data-background-color="#000">
+<section data-background-iframe="assets/T-rex-Dynamicmath/index.html" data-background-color="#000">
 </section>
-<section data-background-video="assets/image-compression-title.mp4" data-background-video-loop="true" data-background-video-muted>
-  <h2>Image Compression</h2>
+<section data-background-iframe="assets/Drawing_with_Fourier_Transform_and_Epicycles/index.html" data-background-color="#000">
 </section>
 <section data-background-video="assets/epicycles-title.mp4" data-background-video-loop="true" data-background-video-muted>
   <h2>Waveforms</h2>
 </section>
 <section data-background-iframe="assets/Fourier_Sound_Test/index.html" data-background-color="#000">
 </section>
+<section data-background-video="assets/image-compression-title.mp4" data-background-video-loop="true" data-background-video-muted>
+  <h2>Image Compression</h2>
+</section>
+<section data-background-iframe="assets/fourier/jpeg1.html" data-background-color="#000">
+</section>
+<section data-background-iframe="assets/fourier/jpeg2.html" data-background-color="#000">
+</section>
+<section data-background-iframe="assets/fourier/jpeg3.html" data-background-color="#000">
+</section>
+<section data-background-iframe="assets/fourier/jpeg4.html" data-background-color="#000">
+</section>
 <section data-background-video="assets/sound-compression-title.mp4" data-background-video-loop="true" data-background-video-muted>
   <h2>Sound Compression</h2>
 </section>
-<section data-background-video="assets/physics-title2.mp4" data-background-video-loop="true" data-background-video-muted>
-  <h2>Physics</h2>
+<section>
+    <h3>The Ghost in the MP3</h3>
+    <div class="r-vstack">
+        <video controls src="assets/The Ghost in the MP3 - edit.mp4" width="800"></video>
+    </div>
 </section>
+<!-- <section data-background-video="assets/physics-title2.mp4" data-background-video-loop="true" data-background-video-muted>
+  <h2>Physics</h2>
+</section> -->
