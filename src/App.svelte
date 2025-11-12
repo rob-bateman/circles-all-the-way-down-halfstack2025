@@ -31,3 +31,6 @@
     </div>
 </div>
 
+<div class="left-watermark">
+    <img src="assets/halfstack_400x400.png" alt="The Away Foundation">
+</div>

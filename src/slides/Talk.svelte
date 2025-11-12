@@ -72,6 +72,13 @@
         <video controls src="assets/The Ghost in the MP3 - edit.mp4" width="800"></video>
     </div>
 </section>
+<!-- <section>
+    <h3>The Ghost in the MP3</h3>
+    <div class="r-hstack">
+        <video controls src="assets/Suzanne Vega - Toms Diner Acapella Version - YouTube.mp4" width="800"></video>
+        <video controls src="assets/The Ghost in the MP3 - edit.mp4" width="800"></video>
+    </div>
+</section> -->
 <!-- <section data-background-video="assets/physics-title2.mp4" data-background-video-loop="true" data-background-video-muted>
   <h2>Physics</h2>
 </section> -->
