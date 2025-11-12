@@ -4,7 +4,7 @@ let time = 0;
 let iterations = 30;
 let old_iterations = 0;
 let frequency = 0.8;
-let audioFrequency = 440;
+let audioFrequency = 80;
 let volume = 0.1;
 let angle = 0;
 let old_angle = angle;
@@ -24,17 +24,11 @@ let shouldStartPlaying = false;
 let shouldBeHand = false;
 let shouldBeNoCursor = false;
 
-var freqSlider, iterSlider, scalerSlider, volumeSlider, typeSlider;
+var freqSlider, iterSlider, scalerSlider, volumeSlider, typeSelect;
 
 var audioContext = null;
 var gainNode;
 var osc;
-
-var waveType = {
-    SQUARE: 0,
-    SAW: 1,
-    TRIANGLE: 2
-};
 
 var emulatedKeys = {
     a: 60,
@@ -49,7 +43,7 @@ var emulatedKeys = {
 
 var waveObjects = [];
 
-var currentType = waveType.SQUARE;
+var currentType = "SQUARE";
 var oldType = -1;
 
 
@@ -80,9 +74,9 @@ function setup() {
 
     radius = min(width / 8, height / 4);
 
-    waveObjects[0] = new squareWaveObject("SQUARE");
-    waveObjects[1] = new sawWaveObject("SAW");
-    waveObjects[2] = new triangleWaveObject("TRIANGLE");
+    waveObjects["SQUARE"] = new squareWaveObject("SQUARE");
+    waveObjects["SAWTOOTH"] = new sawWaveObject("SAW");
+    waveObjects["TRIANGLE"] = new triangleWaveObject("TRIANGLE");
 
     initSliders();
     initAudio();
@@ -171,9 +165,9 @@ function updateSliderPositions() {
 
     volumeSlider.position(freqSlider.x + freqSlider.width + 140, freqSlider.y);
 
-    scalerSlider.position(volumeSlider.x, volumeSlider.y + 30);
+    scalerSlider.position(volumeSlider.x, volumeSlider.y + 40);
 
-    typeSlider.position(20, height - 40);
+    typeSelect.position(20, height - 40);
 }
 
 function updateTime() {
@@ -205,7 +199,7 @@ function initSliders() {
     freqSlider.position(20, 10);
     freqSlider.input(updateSliderFrequency);
 
-    iterSlider = createSlider(1, 64, 2);
+    iterSlider = createSlider(1, 64, 1);
     iterSlider.position(20, 40);
     iterSlider.input(imm_updateAudioWaveform);
     iterations = iterSlider.value();
@@ -218,10 +212,15 @@ function initSliders() {
     scalerSlider = createSlider(0, 2, 2);
     scalerSlider.position(volumeSlider.x, volumeSlider.y + 30);
     scalerSlider.input(updateSliderFrequency);
-
-    typeSlider = createSlider(0, 2, 0);
-    typeSlider.position(20, height - 40);
-    typeSlider.input(changeType);
+    typeSelect = createSelect();
+	typeSelect.option('SQUARE');
+	typeSelect.option('SAWTOOTH');
+    typeSelect.option('TRIANGLE');
+    typeSelect.position(20, height - 40);
+    typeSelect.style('font-size', '18px');
+  typeSelect.style('background', '#000');
+  typeSelect.style('color', '#FFF');
+    typeSelect.input(changeType);
 }
 
 function updateSliders() {
@@ -327,7 +326,8 @@ function getNoteForFrequency(f)
 }
 
 function changeType() {
-    currentType = this.value();
+    currentType = this.selected();
+  console.log(currentType);
     imm_updateAudioWaveform();
 }
 
@@ -648,12 +648,6 @@ function drawText() {
         "audio speed (1x, 10x, 100x)",
         scalerSlider.x + scalerSlider.width + spacing,
         scalerSlider.y  + (fontSize/3)
-    );
-
-    text(
-        waveObjects[currentType].getName(),
-        typeSlider.x + typeSlider.width + spacing,
-        typeSlider.y  + (fontSize/3)
     );
 
     textAlign(CENTER);

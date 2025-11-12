@@ -1831,7 +1831,7 @@ var JpegCompressorController = /*#__PURE__*/function (_Controller) {
         return;
       }
       var pos = 1 - (0,_controller_util_js__WEBPACK_IMPORTED_MODULE_0__.getScrollPosition)(this.img);
-      var posAmt = (0,_util_js__WEBPACK_IMPORTED_MODULE_1__.clamp)((0,_util_js__WEBPACK_IMPORTED_MODULE_1__.divideInterval)(pos, 0.4, 0.7), 0, 1);
+      var posAmt = (0,_util_js__WEBPACK_IMPORTED_MODULE_1__.clamp)((0,_util_js__WEBPACK_IMPORTED_MODULE_1__.divideInterval)(pos, 0, 0.9), 0, 1);
       posAmt *= posAmt;
       this.context.drawImage(this.baseImage, 0, 0);
       var dataUrl = this.canvas.toDataURL('image/jpeg', posAmt);
