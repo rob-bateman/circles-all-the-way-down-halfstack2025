@@ -34,7 +34,7 @@ function uiSetup() {
     background(0);
     path = [];
     if (showC) {
-      strokeWeight(1);
+      strokeWeight(2);
       stroke(255);
       zoom = 10;
       //stepv.value(1);

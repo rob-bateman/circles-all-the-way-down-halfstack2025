@@ -24,7 +24,7 @@ function setup() {
   background(0);
   tik = 0;
   noFill();
-  strokeWeight(1);
+  strokeWeight(2);
   stroke(255);
   zoom = 10;
   for (let i = 0; i < circleIter; i++) {

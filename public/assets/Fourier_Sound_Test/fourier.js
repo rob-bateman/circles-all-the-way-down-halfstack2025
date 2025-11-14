@@ -695,7 +695,7 @@ function drawWave() {
         ellipse(mouseX - centreCircle.x, mouseY - centreCircle.y, 8);
     }
 
-    strokeWeight(1);
+    strokeWeight(2);
 
     for (i = 0; i < iterations; i++) {
         let old_x = x;
@@ -719,7 +719,7 @@ function drawWave() {
     let trans = radius + radius;
 
     translate(trans, 0);
-    strokeWeight(1);
+    strokeWeight(2);
     line(x - trans, y, 0, y);
     drawWaveshape();
 }
@@ -750,7 +750,7 @@ function drawContourShape() {
 }
 
 function drawWaveshape() {
-    strokeWeight(1);
+    strokeWeight(2);
     beginShape();
     for (let i = 0; i < waveShape.length; i++) {
         vertex(i, waveShape[i]);
@@ -939,7 +939,7 @@ class playButton {
         stroke(255);
         strokeWeight(4);
         ellipse(this.position.x, this.position.y, this.size + 3);
-        strokeWeight(1);
+        strokeWeight(2);
     }
 
     drawStopSymbol(c) {
