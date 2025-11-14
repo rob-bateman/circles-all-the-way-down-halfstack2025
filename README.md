@@ -31,7 +31,7 @@
 
 [T-Rex Dynamicmath](https://editor.p5js.org/robnet/sketches/lsSFK3cZn)
 
-[Drawing with Fourier Transform adn Eipcycles](https://editor.p5js.org/robnet/sketches/j1Uq5eTXT)
+[Drawing with Fourier Transform and Epicycles](https://editor.p5js.org/robnet/sketches/j1Uq5eTXT)
 
 [Fourier Sound Test](https://editor.p5js.org/robnet/sketches/1l9ViSDoO)
 
