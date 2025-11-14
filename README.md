@@ -1,3 +1,41 @@
+# Circles All The Way Down
+
+## References
+
+[All 6 Trig Functions on the Unit Circle](https://www.youtube.com/watch?v=Dsf6ADwJ66E&t=352s)
+
+[The Coding Train #125 — Fourier Series](https://thecodingtrain.com/challenges/125-fourier-series)
+
+[The Coding Train #130 — Drawing with Fourier Transform and Epicycles](https://thecodingtrain.com/challenges/130-drawing-with-fourier-transform-and-epicycles)
+
+[3Blue1Brown - But what is a Fourier series? From heat flow to drawing with circles | DE4](https://www.youtube.com/watch?v=r6sGWTCMz2k&t=1152s)
+
+[3Blue1Brown - But what is the Fourier Transform? A visual introduction.](https://www.youtube.com/watch?v=spUNpyF58BY&t=23s)
+
+[Custom Fractal Spirograph - chromatic.waltz](https://editor.p5js.org/chromatic.waltz/sketches/3U4VpZ1Ee)
+
+[Juan Carlos Ponce Campuzano - T-Rex Dynamicmath](https://editor.p5js.org/jcponce/sketches/-IvSz9U-6)
+
+[Draw any SVG with Fourier Transform and Epicycles - Abbas Majidov](https://absmj.github.io/fourier-artist/)
+
+[Playable Fourier Series Audiovisualisation - Sander Vermeer](https://editor.p5js.org/mohragk/full/BkMiw4KxV)
+
+[An Interactive Introduction to Fourier Transforms - Jez Swanson](https://www.jezzamon.com/fourier/index.html)
+
+[The Ghost in the MP3 - Ryan Maguire](https://www.theghostinthemp3.com/theghostinthemp3.html)
+
+
+## My P5js links
+
+[Custom Fractal Spirograph](https://editor.p5js.org/robnet/sketches/uO80F2sLJ)
+
+[T-Rex Dynamicmath](https://editor.p5js.org/robnet/sketches/lsSFK3cZn)
+
+[Drawing with Fourier Transform adn Eipcycles]([Dynamicmath](https://editor.p5js.org/robnet/sketches/j1Uq5eTXT))
+
+[Fourier Sound Test](https://editor.p5js.org/robnet/sketches/1l9ViSDoO)
+
+
 # Reveal.js + Svelte + Vite + TailwindCSS
 
 ![Svelte Slides logo](public/svelte-slides.jpg)
